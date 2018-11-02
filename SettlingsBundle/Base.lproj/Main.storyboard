@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SettlingsBundle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Pizza" translatesAutoresizingMaskIntoConstraints="NO" id="WS4-4i-dAP">
+                                <rect key="frame" x="0.0" y="-698" width="375" height="1365"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favorite Pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN1-5J-AiV">
+                                <rect key="frame" x="30" y="25" width="315" height="47"/>
+                                <color key="backgroundColor" name="Dark red blue transparent"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" name="Yellow"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A favorite pizza goes here" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqS-dy-J2Y">
+                                <rect key="frame" x="30" y="92" width="315" height="65.5"/>
+                                <color key="backgroundColor" name="Dark red blue transparent"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" name="Green "/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VG8-QC-djC">
+                                <rect key="frame" x="20" y="523" width="335" height="124"/>
+                                <color key="backgroundColor" name="Dark red blue transparent"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" name="Yellow"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u2t-s1-SrW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kqS-dy-J2Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2NK-UD-vAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kqS-dy-J2Y" secondAttribute="trailing" constant="30" id="AIH-33-AWy"/>
+                            <constraint firstAttribute="trailing" secondItem="WS4-4i-dAP" secondAttribute="trailing" id="Cfl-3L-dkX"/>
+                            <constraint firstItem="WS4-4i-dAP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DCA-hG-r19"/>
+                            <constraint firstItem="kqS-dy-J2Y" firstAttribute="top" secondItem="DN1-5J-AiV" secondAttribute="bottom" constant="20" id="T3K-pk-Jle"/>
+                            <constraint firstItem="DN1-5J-AiV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="V6B-Va-Hf8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DN1-5J-AiV" secondAttribute="trailing" constant="30" id="WTU-1d-FP7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VG8-QC-djC" secondAttribute="trailing" constant="20" id="gWc-5z-U9e"/>
+                            <constraint firstItem="VG8-QC-djC" firstAttribute="height" secondItem="WS4-4i-dAP" secondAttribute="height" multiplier="1:11" id="gyI-0I-r3X"/>
+                            <constraint firstItem="VG8-QC-djC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j4c-7g-OYx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VG8-QC-djC" secondAttribute="bottom" constant="20" id="kW5-d3-Cc7"/>
+                            <constraint firstAttribute="bottom" secondItem="WS4-4i-dAP" secondAttribute="bottom" id="nDN-Gl-uV8"/>
+                            <constraint firstItem="DN1-5J-AiV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="tmj-Sg-uXi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="favoritePizza" destination="kqS-dy-J2Y" id="EZX-Da-qki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pizza" width="1024" height="1365"/>
+        <namedColor name="Dark red blue transparent">
+            <color red="0.50588235294117645" green="0.0" blue="0.49803921568627452" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green ">
+            <color red="0.0" green="1" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
